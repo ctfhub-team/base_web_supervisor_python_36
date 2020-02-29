@@ -1,0 +1,7 @@
+name: base_web_supervisor_python_36
+title: 基础镜像 WEB Supervisor python 3.6
+desc: 基础镜像 WEB Supervisor python 3.6
+tags:
+  - web
+  - python
+  - supervisor
