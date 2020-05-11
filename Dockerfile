@@ -24,6 +24,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     mv /tmp/docker-entrypoint /usr/local/bin/docker-entrypoint \
     && chmod +x /usr/local/bin/docker-entrypoint; \
     # workdir
+    mkdir /app && \
     chown -R nobody:nogroup /app
 
 WORKDIR /app
