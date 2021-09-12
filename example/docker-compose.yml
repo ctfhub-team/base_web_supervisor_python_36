@@ -1,0 +1,12 @@
+version: "2"
+services:
+  challenge:
+    build: .
+    image: base_web_supervisor_python_36_example
+    ports:
+      - "10800:80"
+    environment:
+      - FLAG=ctfhub{supervisor_web}
+      - MODULE_NAME=app
+      - VARIABLE_NAME=app
+      - WORK_CLASS=gevent
